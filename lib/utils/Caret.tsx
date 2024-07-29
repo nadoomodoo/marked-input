@@ -69,8 +69,12 @@ export class Caret {
 
 	static setCaretToEnd(element: HTMLElement | null | undefined) {
 		if (!element) return
-		const selection = window.getSelection()
-		selection?.setPosition(element, 1)
+		try {
+			const selection = window.getSelection()
+			selection?.setPosition(element, 1)
+		} catch (e) {
+			console.error(e)
+		}
 	}
 
 
