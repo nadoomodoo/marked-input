@@ -1,5 +1,5 @@
 {
-  "name": "rc-marked-input",
+  "name": "@nadoomodoo/marked-input",
   "peerDependencies": {
     "react": ">=17.0.0"
   },

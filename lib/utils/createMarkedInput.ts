@@ -12,5 +12,5 @@ export function createMarkedInput<T = MarkStruct>(configs: Omit<MarkedInputProps
 		return _MarkedInput(assignedProps, ref)
 	}
 
-	return forwardRef(ConfiguredMarkedInput)
+	return forwardRef(ConfiguredMarkedInput) as any
 }
